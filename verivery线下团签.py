@@ -20,11 +20,11 @@ PUSH_INTERVAL = 60
 # key   : API 返回的 opt_id（"000A" ~ "000G"），可以从抓包里的 "opt_id" 字段确认
 # value : 该选项对应的 CSV 文件完整路径（Windows 示例；Linux/macOS 请改成 /home/xxx/...）
 OPTION_FILE_MAP = {
-    "000A": r"D:\fansign\local-ing\verivery_br1017\VERIVERY线下团签.csv"
+    "000A": r"D:\fansign\ing\verivery_br1017\VERIVERY线下团签.csv"
 }
 
 # 没匹配到 opt_id 时，统一写到这个文件（可自定义）
-DEFAULT_LOG_FILE = r"D:\fansign\local-ing\verivery_br1017\其他.csv"
+DEFAULT_LOG_FILE = r"D:\fansign\ing\verivery_br1017\其他.csv"
 
 # 确保所有目录都存在
 for _f in list(OPTION_FILE_MAP.values()) + [DEFAULT_LOG_FILE]:
